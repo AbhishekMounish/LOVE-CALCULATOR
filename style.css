@@ -1,0 +1,59 @@
+body{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+ }
+ .container{
+   
+    padding: 40px;
+    width:500px;
+    min-height: 470px;
+    max-height: 470px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+    border-radius: 5%;
+    margin: 0;
+    transition: max-height 0.5s ease-in-out;
+}
+.container.expanded {
+  max-height: 560px; /* bigger max height when result shows */
+}
+label{
+    text-align: start;
+}
+h1{
+    margin-bottom: 10px ;
+    text-align: center;
+}
+h2{
+    margin-bottom: 10px;
+    text-align: center;
+}
+input{
+    padding: 10px;
+    border: 2px solid rgb(241, 146, 162);
+
+}
+button {
+  
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 20px;
+  text-align: center;
+  
+}
+#result {
+    word-break: break-word;
+  overflow-wrap: break-word;
+  transition: all 0.5s ease-in-out;
+  opacity: 0.95;
+  max-height: 50px;      /* initial height, fits small text */
+  overflow: hidden;      /* hide overflow */
+  padding: 10px;
+
+}
+#result.expanded {
+  max-height: 200px;     /* enough height for bigger content */
+  padding: 20px;         /* more padding when expanded */
+}
